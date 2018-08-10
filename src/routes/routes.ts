@@ -1,13 +1,21 @@
 import {Request, Response} from "express";
 
+import {createUser, loginUser} from '../controllers/userController';
+
 // 메인 라우터 입니다 
 
 export class Routes {       
-    public routes(app): void {          
+    public routes(app): void {
+        
+        app.route('/api/user')
+        .post(createUser)
+        app.route('/api/user/login')
+        .post(loginUser);
+
         app.route('/')
         .get((req: Request, res: Response) => {            
             res.status(200).send({
-                message: 'main routes'
+                message: 'main routes1'
             })
         })
         

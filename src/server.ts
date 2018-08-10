@@ -1,6 +1,11 @@
 import app from "./app";
+
 const PORT = 8000;
 
-app.listen(PORT, () => {
-    console.log('Express server listening on port ' + PORT);
-})
+(async () => {
+    app
+      .listen(
+        PORT,
+        () => console.info(`Server running on port ${PORT}`)
+      );
+  })();
