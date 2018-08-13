@@ -29,4 +29,4 @@ npm start
 yarn start
 ```
 ## Connection
-![](./images/create-user.png)
+![](./images/create-user.PNG)
