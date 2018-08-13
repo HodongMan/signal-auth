@@ -1,33 +1,33 @@
 {
-  "dependencies": {
-    "@types/express": "^4.16.0",
-    "@types/express-jwt": "^0.0.40",
-    "@types/jsonwebtoken": "^7.2.8",
-    "@types/sequelize": "^4.27.24",
-    "body-parser": "^1.18.3",
-    "composable-middleware": "^0.3.0",
-    "crypto": "^1.0.1",
-    "errorhandler": "^1.5.0",
-    "express": "^4.16.3",
-    "express-jwt": "^5.3.1",
-    "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.2.5",
-    "mysql2": "^1.6.1",
-    "nodemon": "^1.18.3",
-    "reflect-metadata": "^0.1.12",
-    "sequelize": "^4.38.0",
-    "sequelize-typescript": "^0.6.6",
-    "strong-error-handler": "^3.1.0",
-    "typescript": "1.0.0"
-  },
-  "scripts": {
-    "build": "tsc",
-    "dev": "ts-node ./src/server.ts",
-    "start": "nodemon ./dist/server.js",
-    "prod": "npm run build && npm run start"
-  },
   "name": "signal-auth",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT"
+  "scripts": {
+    "start": "node --require ts-node/register index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-jwt": "^0.0.40",
+    "@types/jsonwebtoken": "^7.2.8",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "composable-middleware": "^0.3.0",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.3.0",
+    "mysql2": "^1.5.1",
+    "reflect-metadata": "^0.1.10",
+    "sequelize": "^4.37.5",
+    "sequelize-typescript": "^1.0.0-alpha.1",
+    "strong-error-handler": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39",
+    "@types/node": "^8.0.53",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.8.1"
+  }
 }

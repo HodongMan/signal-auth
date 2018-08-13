@@ -1,6 +1,6 @@
 import {Request, Response} from "express";
 
-import {createUser, loginUser} from '../controllers/userController';
+import {createUser, loginUser} from '../controllers/UserController';
 
 // 메인 라우터 입니다 
 

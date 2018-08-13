@@ -1,6 +1,7 @@
-import {Request, Response, NextFunction} from "express";
-import * as jwt from 'jsonwebtoken';
-import { User } from '../models/UserModel';
+import { Request, Response, NextFunction } from "express";
+import * as jwt from 'jsonwebtoken'
+;
+import { User } from '../models/User';
 
 export async function createUser(req: Request, res: Response, next: NextFunction) {
     try {
