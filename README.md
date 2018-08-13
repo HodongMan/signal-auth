@@ -1,4 +1,4 @@
-# sequelize-typescript-starter
+# signal-auth
 
 ## Installation
 ```
