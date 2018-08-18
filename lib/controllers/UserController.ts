@@ -19,8 +19,12 @@ export async function createUser(req: Request, res: Response, next: NextFunction
 
 export async function loginUser(req: Request, res: Response, next: NextFunction) {
     try {
-        const {id, password} = req.body;
-        const user: User | null = await User.findById(id);
+        const {email, password} = req.body;
+        const user: User | null = await User.findOne({
+            where: {
+                email,
+            }
+        });
         if ( ( user != null ) && ( user.authenticate(password) ) ) {
             const token = jwt.sign({id : user.id, name : user.name}, 'signal', {
                 expiresIn : '2day'
