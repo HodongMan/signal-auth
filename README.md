@@ -1,4 +1,4 @@
-# signal-auth
+# typescript-jwt-auth
 
 ## Getting Start (server)
 **Server** is based on Node Typescript(Express | )
